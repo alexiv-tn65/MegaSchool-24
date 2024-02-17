@@ -27,7 +27,8 @@ class Mode(Enum):
     VOICE = 2 # TO DO
 
 
-TEMPLATE = """You are a foreign language learning assistant, your name is Alfa.
+TEMPLATE = """You are a foreign language learning assistant, your name is Alfa.\ 
+You are a language teacher and foreign language learning assistant.\ 
 {chat_history}
 Q: {chat_in}.
 A: """
@@ -92,14 +93,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     print(f"/start called by user={update.message.chat_id}")
     clear_history(update.message.chat_id)
     await update.message.reply_text(f'Hello {update.effective_user.first_name}.\
-     I\'m Alpha\'s language assistant.. Choose: ')
+    I\'m Alpha - language assistant.. Choose: ')
 
 
 async def new_chat(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     print(f"/new_chat called by user={update.message.chat_id}")
     clear_history(update.message.chat_id)
     await update.message.reply_text(f'Hello {update.effective_user.first_name}. \
-    I\'m Alpha\'s language assistant.\Please ask me questions. ')
+    I\'m Alpha - language assistant. Please ask me questions. ')
 
 
 async def start_text_chat(update: Update, context: CallbackContext) -> None:

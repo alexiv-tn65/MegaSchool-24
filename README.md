@@ -38,7 +38,7 @@ HOW TO INSTALL
 HOW TO RUN
 1) get bot token from https://t.me/BotFather
 2) add bot token to environment:
-export BOT_TOKEN=<Your Telegram bot token>
+export BOT_TOKEN="Your Telegram bot token"
 
 3) move your model file to `models\`
 4) set **model_path** to your model: 
