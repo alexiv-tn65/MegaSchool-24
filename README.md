@@ -20,15 +20,17 @@
 
 - [Презентация]
 - [Демонстрация работы]
+- [Демонстрация работы]
 
-## Установка
+## Установка и запуск
+
+
+### What do you need? 
+1. Python 3.11 (Tested with Python 3.11.8)
+2. A free Telegram bot token from [@BotFather](https://t.me/BotFather)
+3. A [Llama.cpp](https://github.com/ggerganov/llama.cpp) supported model in your local system
 
 HOW TO INSTALL
-### What do you need? 
-1. A free Telegram bot token from [@BotFather](https://t.me/BotFather)
-2. A [Llama.cpp](https://github.com/ggerganov/llama.cpp) supported model in your local system
-
-
 1) clone this repo  `git clone https://github.com/alexiv-tn65/MegaSchool-24.git`
 2) install requirements.  `pip install -r MegaSchool-24\requirements_app.txt`
 
