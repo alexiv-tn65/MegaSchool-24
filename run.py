@@ -19,13 +19,27 @@ if not MODEL_PATH or not os.path.isfile(MODEL_PATH):
 
 ll_model = Llama(model_path=MODEL_PATH)
 
+user_data = {}
+context_len = 500
+
+class Mode(Enum):
+    TEXT = 1
+    VOICE = 2 # TO DO
+
+
+TEMPLATE = """You are a foreign language learning assistant, your name is Alfa.
+{chat_history}
+Q: {chat_in}.
+A: """
+
+
 def save_chat(user_id, chat_in, chat_out) -> None:
     chat_history = ""
-    if user_id not in user_db:
-        user_db[user_id] = {}
+    if user_id not in user_data:
+        user_data[user_id] = {}
 
     try:
-        chat_history = user_db[user_id]["history"]
+        chat_history = user_data[user_id]["history"]
     except KeyError:
         pass
 
@@ -33,11 +47,11 @@ def save_chat(user_id, chat_in, chat_out) -> None:
     if len(chat_history) > context_len:
         chat_history = chat_history[-context_len:]
 
-    user_db[user_id]["history"] = chat_history
+    user_data[user_id]["history"] = chat_history
 
 def get_history(user_id):
     try:
-        return user_db[user_id]["history"]
+        return user_data[user_id]["history"]
     except KeyError as e:
         print(e)
         pass
@@ -47,18 +61,18 @@ def get_history(user_id):
 
 def clear_history(user_id):
     try:
-        user_db[user_id]["history"] = ""
+        user_data[user_id]["history"] = ""
     except KeyError as e:
         print(e)
         pass
 
 
 def set_mode(user_id, mode):
-    if user_id not in user_db:
-        user_db[user_id] = {}
+    if user_id not in user_data:
+        user_data[user_id] = {}
 
     try:
-        user_db[user_id]["chat_mode"] = mode
+        user_data[user_id]["chat_mode"] = mode
     except KeyError as e:
         print(e)
         pass
@@ -66,7 +80,7 @@ def set_mode(user_id, mode):
 
 def get_mode(user_id):
     try:
-        return user_db[user_id]["chat_mode"]
+        return user_data[user_id]["chat_mode"]
     except KeyError as e:
         print(e)
         pass
