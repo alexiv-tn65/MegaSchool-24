@@ -2,23 +2,32 @@
 
 Проект подготовлен в рамках MegaSchool'24 по треку искусственный интеллект
 
+## Идея: создать ассистента для изучения иностранных языков
+
 ## Описание
 
-## Идея: создать ассистента для изучения иностранных языков
+<details><summary><b>Что делает наш сервис?</b></summary>
+
+</details>
+
+<details><summary><b>Запуск сервиса</b></summary>
+
+
+</details>
+
 
 ## Результаты проекта:
 
--
--
-### Demo
--
+- [Презентация]
+- [Демонстрация работы]
 
 ## Установка
 
 HOW TO INSTALL
 ### What do you need? 
 1. A free Telegram bot token from [@BotFather](https://t.me/BotFather)
-2. A [Llama.cpp](https://github.com/ggerganov/llama.cpp) supported model in your local system 
+2. A [Llama.cpp](https://github.com/ggerganov/llama.cpp) supported model in your local system
+
 
 1) clone this repo  `git clone https://github.com/alexiv-tn65/MegaSchool-24.git`
 2) install requirements.  `pip install -r MegaSchool-24\requirements_app.txt`
