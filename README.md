@@ -6,6 +6,25 @@
 
 ## Идея: создать ассистента для изучения иностранных языков
 
-## Результаты
+## Результаты проекта:
+
+-
+-
+-
 
 ## Установка
+
+HOW TO INSTALL 
+1) clone this repo  
+`git clone https://github.com/alexiv-tn65/MegaSchool-24.git`
+2) install requirements.  
+`pip install -r MegaSchool-24\requirements_app.txt`
+
+HOW TO RUN
+1) get bot token from https://t.me/BotFather
+2) add bot token to environment
+3) move your model file to `models\`
+4) set **model_path** to your model in
+5) start 
+
+FEATURES:
