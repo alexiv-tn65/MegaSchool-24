@@ -27,7 +27,7 @@
 
 ### What do you need? 
 1. Python 3.11 (Tested with Python 3.11.8)
-2. A free Telegram bot token from [@BotFather](https://t.me/BotFather)
+2. Сhat history from telegram or 
 3. A [Llama.cpp](https://github.com/ggerganov/llama.cpp) supported model in your local system
 
 HOW TO INSTALL
@@ -36,14 +36,18 @@ HOW TO INSTALL
 
 
 HOW TO RUN
-1) get bot token from https://t.me/BotFather
-2) add bot token to environment:
-export BOT_TOKEN="Your Telegram bot token"
+1) download (export) chat history from telegram to *.json file as shown in the picture,
+   let's call this file `result.json`
+2) generate a file `preprocessed_data.pkl` from `result.json`, 
+   run the command: 
+   python -m file_preparation path\to\your\result.json
+   example:
+   python -m file_preparation examples\result.json
 
 3) move your model file to `models\`
-4) set **model_path** to your model: 
-export MODEL_PATH=/path/to/your/model/file
+4) set the environment variable **model_path** to your model:
+   export MODEL_PATH=/path/to/your/model/file
 
-5) start: python3 main.py
+5) start: python3 run_app.py
 
 FEATURES:
