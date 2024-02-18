@@ -26,10 +26,6 @@
 </details>
 
 
-<details><summary><b>Схема работы</b></summary>
-
-</details>
-
 <details><summary><b> How to install and run the application</b></summary>
 
 ### What do you need? 
