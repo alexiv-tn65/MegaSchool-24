@@ -10,7 +10,7 @@ embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2"
 
 def prepare_data_file(data_file_path):
     loader = TgJsonLoader(data_file_path)
-    loaded_data = loader.load_docs()
+    loaded_data = loader.load()
 
     splitter = CharacterTextSplitter(separator="\n\n", chunk_size=512, chunk_overlap=20)
     document = splitter.split_documents(loaded_data)

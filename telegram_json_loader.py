@@ -19,7 +19,7 @@ class TgJsonLoader(BaseLoader):
         text = row['text']
         return f'{sender} on {date}: {text}\n\n'
 
-    def load_docs(self) -> List[Document]:
+    def load(self):
         p = Path(self.file_path)
 
         with open(p, encoding="utf8") as f:
