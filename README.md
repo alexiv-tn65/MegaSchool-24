@@ -8,8 +8,8 @@
 
 <details><summary><b>Что делает наше приложение?</b></summary>
 
--
--
+- [Видео-демонстрация](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/video/example_of_work.mp4)
+- [Презентация]()
 </details>
 
 <details><summary><b>Установка и запуск приложения</b></summary>
