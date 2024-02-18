@@ -2,14 +2,14 @@
 
 Проект подготовлен в рамках MegaSchool'24 по треку искусственный интеллект
 
-### Идея: создать Retrieval-Augmented Generation ассистента способного вести диалог на основе  данных извлеченных из истории telegram каналов, чатов и других источников. C использованием локальной LLM.
+### Идея: создать Retrieval-Augmented Generation ассистента, способного вести диалог на основе  данных, извлеченных из истории telegram каналов, чатов и других источников с использованием локальной LLM.
 
 ### Описание
 
 <details><summary><b>Что делает наше приложение?</b></summary>
 
 - [Видео-демонстрация](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/video/example_of_work.mp4)
-- [Презентация]()
+- [Презентация](https://docs.google.com/presentation/d/1tYVA14dDTlPAIKYIYMfqV4TRJbFLYdDu/edit?usp=sharing&ouid=107883479489528973223&rtpof=true&sd=true)
 - [Примеры ответов](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/images/example.png)
 </details>
 
