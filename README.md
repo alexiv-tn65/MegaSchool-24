@@ -2,7 +2,7 @@
 
 Проект подготовлен в рамках MegaSchool'24 по треку искусственный интеллект
 
-### Идея: создать Retrieval-Augmented Generation ассистента способного вести диалог на основе  данных извлеченных из истории telegram каналов, чатов и других источников. C Использованием локальной LLM.
+### Идея: создать Retrieval-Augmented Generation ассистента способного вести диалог на основе  данных извлеченных из истории telegram каналов, чатов и других источников. C использованием локальной LLM.
 
 ### Описание
 
@@ -16,7 +16,7 @@
 
 - склонируйте репозиторий  `git clone https://github.com/alexiv-tn65/MegaSchool-24.git`
 - установите зависимости  `pip install -r requirements.txt`
-- скачайте (экспортируйте) историю чата или телеграм канала  в файл *.json, как показано на картинке, назовем этот файл `result.json`
+- скачайте (экспортируйте) историю чата или телеграм канала  в файл *.json, как показано на картинке [![Alt text](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/images/export_telegram_history.png)], назовем этот файл `result.json`
 - сгенерируйте фаил `preprocessed_data.pkl` из  `result.json`, выполнив в командной строке: python -m file_preparation path\to\your\result.json
 - например: python -m file_preparation examples\result.json
 </details>
