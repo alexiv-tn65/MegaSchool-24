@@ -1,5 +1,10 @@
+import sys
 import pickle
 from process_request import create_chain
+
+if not sys.warnoptions:
+    import warnings
+    warnings.simplefilter("ignore")
 
 
 if __name__ == "__main__":
@@ -9,9 +14,9 @@ if __name__ == "__main__":
     history = []
     
     while True:
-        print("Ваш вопрос:")
+        print("\nВаш вопрос:")
         question = input()
         result = new_chain({"question": question, "chat_history": history})
         history.append((question, result["answer"]))
-        print("AI ассистент:")
-        print(result["answer"])
+        print("\nAI ассистент:")
+        # print(result["answer"])

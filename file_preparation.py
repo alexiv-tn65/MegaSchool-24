@@ -27,5 +27,5 @@ if __name__ == '__main__':
     parser.add_argument('json_file_path', type=str,
                         help='Json(*.json) file from telegram or other sources')
     args = parser.parse_args()
-    file_path = args.file_path
+    file_path = args.json_file_path
     prepare_data_file(file_path)
