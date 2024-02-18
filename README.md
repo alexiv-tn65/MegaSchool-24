@@ -36,16 +36,16 @@ HOW TO INSTALL
 
 
 HOW TO RUN
-1) download (export) chat history from telegram to *.json file as shown in the picture,
+1) download (export) chat history from telegram to *.json file as shown in the picture,\
    let's call this file `result.json`
 2) generate a file `preprocessed_data.pkl` from `result.json`,\
    run the command:\
-   python -m file_preparation path\to\your\result.json
+   python -m file_preparation path\to\your\result.json \
    example:\
    python -m file_preparation examples\result.json
 
 3) move your LL model file in *.gguf format  to `models\`
-4) set the environment variable **model_path** to your model:\
+4) set the environment variable **MODEL_PATH** to your model:\
    export MODEL_PATH=/path/to/your/model/file
 
 5) start: python3 run_app.py
