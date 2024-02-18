@@ -8,8 +8,7 @@
 
 <details><summary><b>Что делает наше приложение?</b></summary>
 
-- [Видео-демонстрация](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/video/example_of_work.mp4)
-- [Презентация](https://docs.google.com/presentation/d/1tYVA14dDTlPAIKYIYMfqV4TRJbFLYdDu/edit?usp=sharing&ouid=107883479489528973223&rtpof=true&sd=true)
+- [Видео-демонстрация](https://drive.google.com/file/d/18JUK7K6xzXk3STs3g2sm5rz1H2a4ktrk/view?usp=sharing)
 - [Примеры ответов](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/images/example.png)
 </details>
 
@@ -18,7 +17,7 @@
 - склонируйте репозиторий  `git clone https://github.com/alexiv-tn65/MegaSchool-24.git`
 - установите зависимости  `pip install -r requirements.txt`
 - скачайте (экспортируйте) историю чата или телеграм канала  в файл *.json, как показано на картинке ![Alt text](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/images/export_telegram_history.png)
-- [Видео-демонстрация подготовки фаила](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/video/export_telegram_history.mp4)
+- [Видео-демонстрация подготовки фаила](https://drive.google.com/file/d/1wklGH_8Op8Kk2k9KD2XjNWOMw_UBZXaA/view?usp=sharing)
 - назовем этот файл `result.json`
 - сгенерируйте фаил `preprocessed_data.pkl` из  `result.json`, выполнив в командной строке: `python -m file_preparation path\to\your\result.json`
 - например: `python -m file_preparation examples\result.json`
