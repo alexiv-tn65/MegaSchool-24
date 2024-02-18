@@ -2,13 +2,14 @@
 
 Проект подготовлен в рамках MegaSchool'24 по треку искусственный интеллект
 
-## Идея: создать Retrieval-Augmented Generation приложение с возможностью формулировать свои ответы на  основе  данных извлеченных из истории telegram каналов, чатов и других источников
+### Идея: создать Retrieval-Augmented Generation приложение с возможностью формулировать свои ответы на основе  данных извлеченных из истории telegram каналов, чатов и других источников. C Использованием локальной LLM.
 
-## Описание
+### Описание
 
 <details><summary><b>Что делает наше приложение?</b></summary>
-*
-*
+
+-
+-
 </details>
 
 <details><summary><b>Запуск приложение</b></summary>
@@ -16,7 +17,7 @@
 - склонируйте репозиторий  `git clone https://github.com/alexiv-tn65/MegaSchool-24.git`
 - установите зависимости  `pip install -r requirements.txt`
 - скачайте (экспортируйте) историю чата или телеграм канала  в файл *.json, как показано на картинке, назовем этот файл `result.json`
-- сгенерируйте фаил `preprocessed_data.pkl` из  `result.json` выполнив в командной строке: python -m file_preparation path\to\your\result.json
+- сгенерируйте фаил `preprocessed_data.pkl` из  `result.json`, выполнив в командной строке: python -m file_preparation path\to\your\result.json
 - например: python -m file_preparation examples\result.json
 </details>
 
@@ -25,13 +26,13 @@
 
 </details>
 
-## Результаты проекта:
+### Результаты проекта:
 
 - [Презентация]
 - [Демонстрация работы]
 - [Демонстрация работы]
 
-## Установка и запуск
+### Установка и запуск
 
 ### What do you need? 
 1. Python 3.11 (Tested with Python 3.11.8)
