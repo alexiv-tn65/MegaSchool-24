@@ -10,7 +10,7 @@ embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2"
 
 def prepare_data_file(data_file_path):
     loader = TgJsonLoader(data_file_path)
-    loaded_data = loader.load()
+    loaded_data = loader.load_docs()
 
     splitter = CharacterTextSplitter(separator="\n\n", chunk_size=512, chunk_overlap=20)
     document = splitter.split_documents(loaded_data)
@@ -27,5 +27,5 @@ if __name__ == '__main__':
     parser.add_argument('json_file_path', type=str,
                         help='Json(*.json) file from telegram or other sources')
     args = parser.parse_args()
-    file_path = args.file_path
+    file_path = args.json_file_path
     prepare_data_file(file_path)
