@@ -10,6 +10,7 @@
 
 - [Видео-демонстрация](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/video/example_of_work.mp4)
 - [Презентация]()
+- [Примеры ответов](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/images/example.png)
 </details>
 
 <details><summary><b>Установка и запуск приложения</b></summary>
@@ -17,6 +18,7 @@
 - склонируйте репозиторий  `git clone https://github.com/alexiv-tn65/MegaSchool-24.git`
 - установите зависимости  `pip install -r requirements.txt`
 - скачайте (экспортируйте) историю чата или телеграм канала  в файл *.json, как показано на картинке ![Alt text](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/images/export_telegram_history.png)
+- [Видео-демонстрация подготовки фаила](https://github.com/alexiv-tn65/MegaSchool-24/blob/main/video/export_telegram_history.mp4)
 - назовем этот файл `result.json`
 - сгенерируйте фаил `preprocessed_data.pkl` из  `result.json`, выполнив в командной строке: `python -m file_preparation path\to\your\result.json`
 - например: `python -m file_preparation examples\result.json`
@@ -28,13 +30,7 @@
 
 </details>
 
-### Результаты проекта:
-
-- [Презентация]
-- [Демонстрация работы]
-- [Демонстрация работы]
-
-### Установка и запуск
+<details><summary><b> How to install and run the application</b></summary>
 
 ### What do you need? 
 1. Python 3.11 (Tested with Python 3.11.8)
@@ -60,3 +56,5 @@ HOW TO RUN
    export MODEL_PATH=/path/to/your/model/file
 
 5) start: python3 run_app.py
+
+</details>
